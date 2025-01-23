@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+
+}
+.circle.square {
+    border-radius: unset;
+}

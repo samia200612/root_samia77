@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    width: 100%;
+    overflow-x:hidden ;
+}
+
+body{
+    background-color: #e9d1b1;
+
+}
+
+
+#container { 
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 30px; 
+}
+
+ .grid-item{
+    background-color: rgb(0, 31, 46);
+    min-height: 300px;
+}
+
+.grid-item.a{
+    background-color: rgb(138, 110, 72);
+
+}
+.grid-item.b{
+    background-color: rgb(138, 110, 72);
+
+}
+.grid-item.c{
+    background-color: rgb(212, 149, 2);
+
+
+}
+
+.grid-item.d{
+    background-color: rgb(255, 233, 190);
+
+}
+.grid-item.e{
+    background-color: rgb(188, 205, 243);
+
+
+}
+.grid-item.f{
+    background-color: rgb(247, 248, 212);
+
+}
+
+.grid-item.g{
+    background-color: rgb(8, 1, 105);
+
+
+}
+
+.grid-item.h{
+    background-color: rgb(235, 174, 210);
+
+}
+.grid-item.i{
+    background-color: rgb(184, 130, 184);
+
+}
+
+.polaroid {
+    box-shadow: 3px 12px 20px #6a6a6ad4 ;
+    border: 20px solid white;
+    border-bottom: 60px solid white ;
+}
+
+.grid-item img{ 
+    width:100%;
+
+}
+/* tablet */
+@media screen and (max-width:1024px){
+    
+    #container { 
+
+        grid-template-columns: repeat(2, 1fr);  }
+         
+}
+/* iphone */
+@media screen and (max-width:430px){
+    
+    #container { 
+
+        grid-template-columns: repeat(1, 1fr); 
+    gap: 30px; }
+        
+}
+        

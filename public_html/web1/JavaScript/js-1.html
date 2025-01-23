@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JavaScript 1</title>
+    
+</head>
+<body>
+    <h1> JavaScirpt Demo 1 </h1>
+    <button id="loader" onclick="loadStuff()">Click me 🎁</button>
+    <main id="content"></main>
+    <audio src="sounds /violin-music-64019.mp3"controls></audio>
+
+
+    <script>
+        alert("Hey Guyss");
+        console.log("Page loaded succesfully")
+
+        /**
+         * Variables
+         */
+
+         //dynamic variable "let"5
+         let myName ="Samia"
+
+         // a constant variable "const"
+         const pi =3.14159265 ;
+
+         // Math operations: + = / * 
+
+         console.log("PI x 7 ="+ pi*7);
+
+         // Concatenate Strings (text data)
+         // with other Strings or dynamic data +
+
+         /**
+          * F u n c t i o n s
+          */
+
+        function eatPizza() {
+            alert("Yummy 🍕")
+
+
+
+        }
+        eatPizza();
+
+        //New Function 
+        let makePizza = () => {
+
+            console.log("adding ingredient...and bake")
+
+        };
+
+        const myContainer= document.getElementById("content");
+        let myAudio = new Audio("sounds/violin-music-64019.mp3");
+
+        
+
+         
+        function loadStuff() {
+            myAudio.play()
+            myContainer.innerHTML= '<p>nights in damascus</p><img src="https://i.pinimg.com/originals/c7/c7/a9/c7c7a9083859c3d3127b637c46ded2c1.jpg" />';
+        }
+    
+    </script>
+    
+</body>
+</html>

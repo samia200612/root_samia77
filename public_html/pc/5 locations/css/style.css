@@ -1,0 +1,56 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  Scroll-behavior: smooth;
+  width:100%;
+  overflow-x:hidden;
+
+}
+h1{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-size:30px;
+ line-height: 33px;
+ color: #5a585a;
+ text-shadow: 3px 3px 5px #c873a0;
+}
+
+
+        
+nav ul li{ 
+  display:inline-block;
+  margin-top: 30px;
+}
+a{
+  font-size: 25px;
+  font-family:, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:#a7609e;
+}
+
+a:hover{
+  color:rgb(145, 145, 243)
+}
+
+
+header{
+  background-color: #f9cdff;
+  width:100%;
+  padding: 20px;
+  word-spacing: 2px;
+}
+body{ 
+  background-color: #ebb5e4;
+  text-align: center;
+}
+ footer{
+  background-color:#e08ab8 ;
+  padding:20px;
+}
+
+img{
+  width: 400px;
+  padding:30px;
+}
