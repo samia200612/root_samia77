@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at center, #0a0a1a 0%, #000 100%);
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+h3 {
+  font-size: 2rem;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #0094ff, 0 0 40px #0055ff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  animation: glowPulse 2.5s infinite alternate;
+}
+
+
+p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
+
+
+iframe {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6),
+              0 0 40px rgba(255, 78, 240, 0.4);
+  width: 80%;
+  max-width: 800px;
+  height: 200px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.8),
+              0 0 60px rgba(255, 78, 240, 0.6);
+}
+
+
+section {
+  position: relative;
+  padding: 20px;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,212,255,0.1) 20%, transparent 60%),
+              radial-gradient(circle, rgba(255,78,240,0.08) 10%, transparent 50%);
+  animation: slowSpin 60s linear infinite;
+  z-index: -1;
+}
+
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 5px #00d4ff, 0 0 10px #0094ff; }
+  to   { text-shadow: 0 0 20px #00d4ff, 0 0 40px #ff4ef0; }
+}
+
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
