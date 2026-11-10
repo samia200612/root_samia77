@@ -1,0 +1,238 @@
+
+/* MOTION 02 — ART DIRECTION */
+
+:root {
+    --pink: #ff3d91;
+    --hot-pink: #ff007f;
+    --soft-pink: #ffb4d2;
+    --cream: #fff0e8;
+    --red: #f04436;
+    --black: #171014;
+    --purple: #9e2769;
+    --mint: #b7e6d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: var(--pink);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    z-index: 100;
+}
+
+.logo {
+    color: var(--cream);
+    font-size: 23px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+.site-header nav {
+    display: flex;
+    gap: 22px;
+}
+
+.site-header nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 11px;
+    transition: color .3s;
+}
+
+.site-header nav a:hover {
+    color: var(--pink);
+}
+
+/* INTRO */
+
+.intro {
+    min-height: 100vh;
+    padding: 110px 7%;
+    background: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.intro h1 {
+    font-size: clamp(110px, 19vw, 250px);
+    font-weight: 900;
+    line-height: .85;
+    letter-spacing: -.12em;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+.intro h1 span {
+    color: var(--cream);
+    -webkit-text-stroke: 2px var(--black);
+}
+
+.scroll-link {
+    margin-top: 55px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/* PROJECT SECTIONS */
+
+.project {
+    min-height: 100vh;
+    padding: 100px 9%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project01 {
+    background: var(--cream);
+    color: var(--black);
+}
+
+.project02 {
+    background: var(--black);
+    color: var(--pink);
+}
+
+.project03 {
+    background: var(--pink);
+    color: var(--black);
+}
+
+.project04 {
+    background: var(--mint);
+    color: var(--black);
+}
+
+.project05 {
+    background: var(--cream);
+    color: var(--black);
+}
+
+.project06 {
+    background: var(--red);
+    color: var(--cream);
+}
+
+/* PROJECT TITLES */
+
+.project-link {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-title {
+    font-size: clamp(55px, 9vw, 125px);
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -.085em;
+    transition: transform .35s ease;
+}
+
+.project-link:hover .project-title {
+    transform: translateX(15px);
+}
+
+/* DECORATIVE DETAILS */
+
+.project::before {
+    content: "MOTION STUDIES / 2026";
+    position: absolute;
+    top: 95px;
+    right: 9%;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    opacity: .65;
+}
+
+.project::after {
+    content: "✳";
+    position: absolute;
+    right: 9%;
+    bottom: 10%;
+    font-size: 45px;
+    opacity: .7;
+    pointer-events: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .site-header {
+        padding: 0 5%;
+    }
+
+    .site-header nav {
+        gap: 10px;
+    }
+
+    .intro {
+        padding: 100px 6%;
+    }
+
+    .intro h1 {
+        font-size: 19vw;
+        letter-spacing: -.1em;
+    }
+
+    .project {
+        padding: 90px 7%;
+    }
+
+    .project-title {
+        font-size: 12vw;
+    }
+
+    .project::before {
+        right: 7%;
+        font-size: 8px;
+    }
+}

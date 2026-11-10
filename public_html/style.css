@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+/* COLOUR PALETTE */
+
+:root {
+    --beige: #D3C3B4;
+    --burgundy: #60061F;
+    --olive: #6B7135;
+    --brown: #5A5336;
+    --dark-red: #2E0003;
+    --wine: #552530;
+    --dark-brown: #3A2C23;
+    --rust: #4E1914;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--beige);
+    color: var(--dark-red);
+    min-height: 100vh;
+    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    height: 105px;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--brown);
+}
+
+.logo {
+    width: 115px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+header p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--olive);
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+    padding: 75px 12%;
+}
+
+/* WELCOME */
+
+.welcome {
+    background: var(--burgundy);
+    color: var(--beige);
+    padding: 65px 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome h1 {
+    font-family: 'Notable', sans-serif;
+    font-size: clamp(35px, 6vw, 76px);
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+.welcome p {
+    margin-top: 35px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #B5A27E;
+}
+
+/* PROJECT LINKS */
+
+nav {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: 55px 1fr 30px;
+    align-items: center;
+    padding: 23px 15px;
+    text-decoration: none;
+    color: var(--dark-red);
+    font-size: 25px;
+    border-bottom: 1px solid rgba(46, 0, 3, 0.3);
+    transition: 0.3s ease;
+}
+
+nav a:first-child {
+    border-top: 1px solid rgba(46, 0, 3, 0.3);
+}
+
+nav a span {
+    font-family: Didot, serif;
+    font-size: 13px;
+    color: var(--olive);
+}
+
+nav a b {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--wine);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    padding-left: 28px;
+    background: var(--olive);
+    color: var(--beige);
+}
+
+nav a:hover span,
+nav a:hover b {
+    color: var(--beige);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark-red);
+    color: var(--beige);
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 6%;
+        height: 85px;
+    }
+
+    .logo {
+        width: 85px;
+    }
+
+    header p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    main {
+        padding: 45px 6%;
+    }
+
+    .welcome {
+        padding: 45px 25px;
+    }
+
+    .welcome h1 {
+        font-size: 36px;
+    }
+
+    nav a {
+        font-size: 21px;
+        padding: 20px 8px;
+        grid-template-columns: 35px 1fr 25px;
+    }
+
+}
